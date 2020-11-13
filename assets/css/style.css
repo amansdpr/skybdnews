@@ -5,6 +5,14 @@ a, a:hover, a:active, a:visited, a:focus {
 	outline: none;
 }
 
+:focus {
+    color: #495057;
+    background-color: #fff;
+    border: none !important;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25) !important;
+}
+
 :lang(bn) {
     font-family: 'Hind Siliguri', sans-serif;
 }
@@ -52,7 +60,7 @@ p {
 
 
 h2.col-title {
-    border-left: 4px solid #eea673;
+    border-left: 4px solid #ffba00;
     padding-left: 15px;
     margin: 15px 0;
 }
@@ -82,7 +90,7 @@ main img {
 }
 
 .grey-bg {
-    background: #eee;
+    background: #f6f6f6;
 }
 
 .grey-bg [class*=col-] > div {
@@ -166,6 +174,65 @@ h2.color-title.cyan {
 h2.color-title.orange {
     background: #e59619;
 }
+
+@media (min-width: 576px) {
+    .search-form.form-inline input {
+        width: 300px;
+    }
+}
+
+.see-all-link {
+    color: #00b4e0;
+}
+
+
+/* Sticky Navigation */
+
+.navbar-sticky {
+    display: none;
+}
+
+.navbar-sticky.sticky-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-animation: navbar-show .25s;
+    animation: navbar-show .25s;
+    box-shadow: 0 0.125rem 0.625rem -0.1875rem rgba(0,0,0,0.1);
+    z-index: 1030;
+}
+
+@-webkit-keyframes navbar-show {
+    from {
+        -webkit-transform: translateY(-0.75rem);
+        transform: translateY(-0.75rem);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes navbar-show {
+    from {
+        -webkit-transform: translateY(-0.75rem);
+        transform: translateY(-0.75rem);
+        opacity: 0
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+
 
 /* 
 	Typography 
@@ -282,6 +349,54 @@ header a {
 }
 
 
+.search-form input {
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-form button {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background: #0b9fff;
+    color: #fff;
+}
+
+
+
+
+/* navbar-sticky */
+.navbar-sticky .logo {
+    margin-right: 30px;
+}
+.navbar-sticky .search-form-toggle {
+    position: relative;
+    padding: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.navbar-sticky .search-form {
+    display: none;
+    position: absolute;
+    width: 350px;
+    top: 37px;
+    right: 0;
+    animation: navbar-show .25s;
+    -webkit-animation: navbar-show .25s;
+}
+.navbar-sticky .search-form.show {
+    display: block;
+}
+.search-form-toggle .search-form input {
+    float: left;
+    height: 40px;
+    box-shadow: 0 0.125rem 0.625rem -0.1875rem rgb(0 0 0 / 50%);
+}
+.search-form-toggle .search-form button {
+    float: left;
+    height: 40px;
+    box-shadow: 0 0.125rem 0.625rem -0.1875rem rgb(0 0 0 / 50%);
+}
 
 
 
