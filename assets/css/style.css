@@ -57,6 +57,10 @@ h2.col-title {
     margin: 15px 0;
 }
 
+.dark-bg h2.col-title {
+    color: #fff;
+}
+
 a {
     color: #555;
 }
@@ -104,6 +108,11 @@ main img {
     margin-top: 5px;
 }
 
+.grey-bg .thumb-small,
+.dark-bg .thumb-small {
+    margin-top: 0;
+}
+
 .post-one {
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -114,11 +123,16 @@ main img {
     padding: 10px;
 }
 
+.post, .post-one {
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
 
 
 .post-one p,
 .post-two p {
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
 .post-two {
@@ -342,14 +356,25 @@ header a {
 
 /* Video Post */
 .vdo-post-box {
-    padding: 0 0 10px 10px;
+    padding: 10px 0 10px 10px;
     overflow-y: scroll;
     max-height: 315px; 
     margin-bottom: 10px;
 }
 
-.vdo-post-box .post {
-    display: block;
-    clear: both;
-    float: none;
+
+
+
+/* Dark BG section */
+.dark-bg {
+    background-color: #1E222B;
+}
+
+.dark-bg .post-one {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.dark-bg .post-one h3 {
+    margin-bottom: 0px;
 }
