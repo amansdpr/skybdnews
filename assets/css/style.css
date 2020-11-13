@@ -22,11 +22,57 @@ body {
     color: #666;
 }
 
+
+h1 {}
+h2 {}
+h3 { 
+    font-size: 20px; 
+    margin-top: 10px;
+    line-height: 30px;
+}
+h4 {}
+h5 {}
+
 a {
     color: #555;
 }
 
+main img {
+    width: 100%;
+}
 
+
+.half-gutters {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.half-gutters>.col,
+.half-gutters>[class*=col-] {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.grey-bg {
+    background: #eee;
+}
+
+.grey-bg [class*=col-] > div {
+    background-color: #fff;
+}
+
+.in-content {
+    padding: 10px;
+}
+
+
+.thumb-big {
+    height: 265px;
+}
+
+.thumb-big img {
+    height: 100%;
+}
 
 
 /* 
@@ -140,4 +186,17 @@ header a {
     height: 2px;
     width: 100%;
     background-color: red;
+}
+
+
+
+
+
+/* Section */
+.adds {
+    height: 100%;
+}
+
+.adds img {
+    height: 100%;
 }
