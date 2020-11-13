@@ -18,22 +18,44 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 body {    
-    font-family: 'Roboto', sans-serif;
     color: #666;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-h1 {}
-h2 {}
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #555;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
 h3 { 
     font-size: 20px; 
     margin-top: 10px;
     line-height: 30px;
 }
+
 h4 {}
+
 h5 {}
 
-p {}
+p {
+    margin: 7px 0;
+}
+
+
+h2.col-title {
+    border-left: 4px solid #eea673;
+    padding-left: 15px;
+    margin: 15px 0;
+}
 
 a {
     color: #555;
@@ -74,6 +96,36 @@ main img {
 
 .thumb-big img {
     height: 100%;
+}
+
+.thumb-small {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.post-one {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+.post-one p,
+.post-two p {
+    margin-bottom: 0px;
+}
+
+.post-two {
+    background: #e8f1f8;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.post-two p {
+    color: #2c4b73;
 }
 
 
@@ -201,4 +253,59 @@ header a {
 
 .adds img {
     height: 100%;
+}
+
+
+
+
+/* Photo Carousel */
+.photo-shongbad a.carousel-control-prev, 
+.photo-shongbad a.carousel-control-next {
+    height: 60%;
+}
+
+
+
+/* Namaz Timeframe */
+.prayerTimeTitle h2.col-title {
+    background: #455960;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.prayerTimeTable {
+    background-image: url(../img/masjid.png);
+    padding: 0 0 0 135px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.prayerName {
+    background: #6b8e23;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 2px 3px;
+}
+.prayerTime {
+    background: olive;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 2px 3px;
+}
+.nonPrayTime {
+    margin: 5px 0 0;
+    padding: 2px;
+    text-align: center;
+    line-height: 23px;
+    background: #455960;
+}
+.sunrise {
+    color: #fff;
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+.sunset {
+    color: #fff;
+    display: inline-block;
 }
