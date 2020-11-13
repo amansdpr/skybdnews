@@ -217,6 +217,7 @@ header a {
     border-radius: 5px;
 }
 
+.archive-menu a.active,
 .archive-menu a:hover {
     background-color: #00b4e1;
 }
@@ -430,4 +431,34 @@ footer .social-link a {
 }
 .social-link .yt {
     background-color: #f02e35;
+}
+
+.footer-menu a {
+    padding: 10px;
+}
+
+footer .archive-menu {
+    margin-bottom: 15px;
+    margin-left: -10px;
+}
+
+.footer-menu {
+    margin-left: -10px;    
+}
+
+.footer-menu a.active,
+.footer-menu a:hover {
+    color: #00b4e0;
+}
+
+footer hr {
+    background-color: #256297;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address p {
+    margin: 2px 0;
 }
