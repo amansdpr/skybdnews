@@ -18,7 +18,7 @@ a, a:hover, a:active, a:visited, a:focus {
 }
 
 body {    
-    color: #666;
+    color: #000;
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5 {
     font-weight: 600;
-    color: #555;
+    color: #000;
 }
 
 h2 {
@@ -110,6 +110,9 @@ main img {
     border-bottom: 1px solid #ddd;
 }
 
+.grey-bg .post-one {
+    padding: 10px;
+}
 
 
 
@@ -132,7 +135,7 @@ h2.color-title {
     background: #0063b6;
     color: #fff;
     text-align: center;
-    padding: 15px 0;
+    line-height: 50px;
 }
 
 h2.color-title.green {
@@ -279,7 +282,8 @@ header a {
 .ek-nojore-bisso {
     background: #009ad7;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
+    padding-top: 5px;
 }
 
 .ek-nojore-bisso a {
@@ -291,10 +295,11 @@ header a {
 
 /* Namaz Timeframe */
 .prayerTimeTitle h2.col-title {
-    background: #455960;
     color: #fff;
+    margin-top: 0;
+    line-height: 50px;
     text-align: center;
-    padding: 10px 0;
+    background: #455960;
 }
 .prayerTimeTable {
     background-image: url(../img/masjid.png);
@@ -331,4 +336,20 @@ header a {
 .sunset {
     color: #fff;
     display: inline-block;
+}
+
+
+
+/* Video Post */
+.vdo-post-box {
+    padding: 0 0 10px 10px;
+    overflow-y: scroll;
+    max-height: 315px; 
+    margin-bottom: 10px;
+}
+
+.vdo-post-box .post {
+    display: block;
+    clear: both;
+    float: none;
 }
