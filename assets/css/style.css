@@ -25,8 +25,14 @@ a:hover {
     font-family: 'SolaimanLipi', sans-serif;
 }
 
-.fa, .fas {
+.fa,
+.fas {
     font-family: 'Font Awesome 5 Free';
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; 
 }
 
 :lang(en){
@@ -45,6 +51,10 @@ body {
 h1, h2, h3, h4, h5 {
     font-weight: 600;
     color: #000;
+}
+
+h1 {
+    font-size: 1.75rem;
 }
 
 h2 {
@@ -789,6 +799,85 @@ footer hr {
 
 
 
+
+
+
+
+
+/* Single.html */
+.bread-crumb {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.post-info p {
+    margin: 0;
+}
+
+.share {
+    border-right: 1px solid;
+    margin-right: 5px;
+    padding-right: 5px;
+    line-height: 10px;
+}
+
+.share span {
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.post-social-icons i {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 100px;
+}
+.fa-facebook {
+    background-color: #4267b2;
+}
+.fa-facebook-messenger {
+    background-color: #448aff;
+}
+.fa-twitter {
+    background-color: #56acee;
+}
+.fa-pinterest {
+    background-color: #cb2027;
+}
+.fa-linkedin {
+    background-color: #0077b5;
+}
+.fa-print {
+    background-color: #757575;
+}
+
+.sidebar-tab li a {
+    padding: 5px 20px;    
+}
+
+.sidebar-tab li a {
+    padding: 5px 20px;
+    background: #ddd;
+}
+
+.home .post-one {
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    paddin-top: 5px;
+}
+
+
+
+/* Footer Css */
+.more-posts-single-page .post {
+    margin-bottom: 10px;
+}
 
 
 
