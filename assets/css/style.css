@@ -1,20 +1,28 @@
+/* Font Import */
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('../webfonts/SolaimanLipiNormal.eot');
+    src: url('../webfonts/SolaimanLipiNormal.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/SolaimanLipiNormal.woff2') format('woff2'),
+        url('../webfonts/SolaimanLipiNormal.woff') format('woff'),
+        url('../webfonts/SolaimanLipiNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 a, a:hover, a:active, a:visited, a:focus {
 	text-decoration: none;
 }
-* {
-	outline: none;
+
+a:hover {
+
 }
 
-:focus {
-    color: #495057;
-    background-color: #fff;
-    border: none !important;
-    outline: 0;
-    box-shadow: 0 0 0 0rem rgba(0,123,255,.25) !important;
-}
 
 :lang(bn) {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'SolaimanLipi', sans-serif;
 }
 
 .fa, .fas {
@@ -30,7 +38,7 @@ body {
     font-size: 15px;
     font-weight: 500;
     line-height: 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'SolaimanLipi', sans-serif;
 }
 
 
@@ -184,6 +192,9 @@ h2.color-title.orange {
 .see-all-link {
     color: #00b4e0;
 }
+.see-all-link:hover {
+    color: #000;
+}
 
 
 /* Sticky Navigation */
@@ -295,6 +306,11 @@ header a {
     padding: 7px 12px;
 }
 
+.lang-menu a:hover {
+    color: inherit;
+    border-color: inherit;
+}
+
 .lang-menu a.active {
 	color: #282828;
 	border-color: #ffba00;
@@ -341,11 +357,16 @@ header a {
 .main-nav-section .navbar-nav li a:hover:before {
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -18px;
     left: 0;
     height: 2px;
     width: 100%;
     background-color: red;
+}
+
+.navbar-sticky .navbar-nav li.active a:before,
+.navbar-sticky .navbar-nav li a:hover:before {
+    bottom: -23px;
 }
 
 
@@ -520,7 +541,7 @@ footer p {
     color: #fff;
 }
 
-footer a:hover {
+footer .archive-menu a:hover {
     color: #fff;
 }
 
@@ -562,7 +583,12 @@ footer .archive-menu {
 }
 
 .footer-menu a.active,
-.footer-menu a:hover {
+.footer-menu a:hover,
+a:hover,
+a:hover h2,
+a:hover h3,
+a:hover h4,
+a:hover p {
     color: #00b4e0;
 }
 
