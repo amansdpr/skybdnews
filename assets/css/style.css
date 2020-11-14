@@ -246,6 +246,10 @@ ul.sub-menu {
     border-bottom: 1px solid #ddd;
 }
 
+.sub-menu > li:last-child {
+    border: none;
+}
+
 .navbar-nav > li:hover ul.sub-menu {
     visibility: visible;
     opacity: 1;
