@@ -864,3 +864,15 @@ footer hr {
     }
 }
 /* max-width: 767px */
+
+
+
+@media (max-width: 575px){
+    header .navbar-collapse {
+        padding: 0;
+    }
+    .navbar-sticky .navbar-collapse {
+        display: none;
+    }
+}
+/* max-width: 575px */
