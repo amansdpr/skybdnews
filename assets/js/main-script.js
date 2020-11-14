@@ -21,10 +21,10 @@
         });
 
 
-       $('#mobile-menu-active').meanmenu({
-            meanScreenWidth: "767",
-            meanMenuContainer: '.menu-prepent',
-        });
+        $('.menu-item-has-children').append('<i class="fa fa-caret-down" aria-hidden="true"></i>');
+
+
+       $('#mobile-menu-active').meanmenu({});
 
         // addclass & removeclass
         $(".menu-toggle").on("click", function() {
@@ -37,7 +37,7 @@
 
         // Show mobile sub menu when click arrow
         $('.mobile-menu ul.m-sub-menu').slideUp();
-        $('.menu i.fa-caret-down').on('click', function(){
+        $('.mobile-menu i.fa-caret-down').on('click', function(){
             $(this).toggleClass('fa-caret-up');
             $(this).prev('ul.m-sub-menu').toggleClass('show');
             $(this).prev('ul.m-sub-menu').slideToggle('slow');

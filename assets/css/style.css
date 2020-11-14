@@ -310,7 +310,7 @@ ul.sub-menu {
 
 /*  Mobile Nav */
 .mobile-menu a {
-    padding: 10px 20px;
+    padding: 12px 20px;
     display: block;
     color: #fff;
     text-align: center;
@@ -373,13 +373,6 @@ ul.sub-menu {
     padding: 0;
     list-style: none;
 }
-
-.mobile-menu a {
-    padding: 10px 20px;
-    display: block;
-    border-bottom: 1px solid #3e4650;
-}
-
 
 
 
@@ -815,8 +808,32 @@ footer hr {
         justify-content: flex-end;
         max-width: 300px;
     }
+    .menu-item-has-children {
+        position: relative;
+    }
+    .mobile-menu i.fa-caret-down {
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-left: 1px solid #3e4650;
+        position: absolute;
+        cursor: pointer;
+        color: #fff;
+    }
+    footer {
+        text-align: center;
+    }
     .footer-menu, footer .archive-menu {
         margin-left: 0;
+    }
+    .social-link {
+        max-width: 300px;
+        margin: auto;
     }
 }
 /* max-width: 991px */
