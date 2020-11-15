@@ -814,6 +814,10 @@ footer hr {
     margin: 0;
 }
 
+.post-social-info {
+    justify-content: flex-end;
+}
+
 .share {
     border-right: 1px solid;
     margin-right: 5px;
@@ -855,6 +859,16 @@ footer hr {
 }
 .fa-print {
     background-color: #757575;
+}
+
+.sidebar-tab {
+    display: flex;
+    gap: 1px;
+}
+
+.sidebar-tab li {
+    width: 33%;
+    float: left;
 }
 
 .sidebar-tab li a {
