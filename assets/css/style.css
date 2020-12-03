@@ -977,6 +977,9 @@ footer hr {
     .navbar-sticky .navbar-collapse {
         display: none;
     }
+    .col-mob-6 {
+        width: 50%;
+    }
 }
 /* max-width: 575px */
 
